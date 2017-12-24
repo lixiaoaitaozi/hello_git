@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="message_title_list">
+        <item>八卦</item>
+        <item>消息</item>
+        <item>私信</item>
+    </string-array>
+
+    <string-array name="find_title_list">
+        <item>用户</item>
+        <item>标签</item>
+    </string-array>
+    <string-array name="label_list_one">
+        <item>#  快手喜剧人</item>
+        <item>#  快手公益</item>
+        <item>#  中国新歌声</item>
+        <item>#  五年滋味</item>
+        <item>#  单身狗有话说</item>
+    </string-array>
+
+    <string-array name="label_list_two">
+        <item>#  500个家乡</item>
+        <item>#  脱口秀大会</item>
+        <item>#  记录身边的传统文化</item>
+        <item>#  快手音乐人</item>
+    </string-array>
+
+    <string-array name="login_way_list">
+        <item>注册</item>
+        <item>登录</item>
+    </string-array>
+</resources>

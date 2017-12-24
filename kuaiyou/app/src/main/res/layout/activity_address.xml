@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.china.kuaiyou.activity.AddressActivity">
+
+    <include layout="@layout/activity_title_white_layout" />
+
+    <LinearLayout
+        android:id="@+id/look_phone_find_layout"
+        style="@style/setting_layout_style"
+        android:background="@color/thin">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/expression" />
+
+        <LinearLayout
+            style="@style/setting_contents_view_style"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="绑定手机，让更多朋友发现你" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="绑定" />
+        </LinearLayout>
+
+        <ImageView style="@style/setting_icon_boult_style" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/show_address_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/the_drawer" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="70dp"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/attention_view"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@color/orange"
+                android:text="+ 关注"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/l2"
+            android:layout_toRightOf="@id/icon_image"
+            android:orientation="vertical"
+            android:paddingLeft="8dip">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:text="肖秀"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/lastmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:text="这是唯一一个正常的朋友"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

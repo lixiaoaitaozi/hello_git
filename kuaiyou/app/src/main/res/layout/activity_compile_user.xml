@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.china.kuaiyou.activity.CompileUserActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/userupdate_bj">
+
+        <include layout="@layout/activity_title_black_layout" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/help_button_view" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/userupdate_bj" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/user_update_item_bj"
+        android:orientation="vertical">
+
+        <!--1-->
+        <LinearLayout
+            android:id="@+id/nick_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="昵称:" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:id="@+id/nick_text"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="快友官方认证" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/help_button_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--2-->
+        <LinearLayout
+            android:id="@+id/user_id_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="用户ID:" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:id="@+id/user_id_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="3564848" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="18dp"
+                        android:background="@drawable/button_square_gray_style"
+                        android:text="升级为快友号"
+                        android:textColor="@color/white"
+                        android:textSize="8dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/help_button_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--3-->
+        <LinearLayout
+            android:id="@+id/code_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="二维码" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="点击查看" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:src="@mipmap/select" />
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/userupdate_bj" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/user_update_item_bj"
+        android:orientation="vertical">
+
+        <!--4-->
+        <LinearLayout
+            android:id="@+id/sex_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="性别" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:id="@+id/sex_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:drawableLeft="@mipmap/male"
+                        android:gravity="center_vertical"
+                        android:text="男" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/help_button_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--5-->
+        <LinearLayout
+            android:id="@+id/birthday_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="生日/星座" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:id="@+id/birthdat_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="请选择" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/help_button_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--6-->
+        <LinearLayout
+            android:id="@+id/location_layout"
+            style="@style/complie_layout_style">
+
+            <TextView
+                style="@style/complie_text_style"
+                android:text="所在地" />
+
+            <LinearLayout style="@style/complie_two_layout_style">
+
+                <LinearLayout style="@style/complie_three_layout_style">
+
+                    <TextView
+                        android:id="@+id/code_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="请选择" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/help_button_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--7-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="个人介绍" />
+
+            <EditText
+                android:id="@+id/introduction_edit_view"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:hint="这个人很懒，什么也没有留下"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

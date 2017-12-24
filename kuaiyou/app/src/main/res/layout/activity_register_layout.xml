@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bj"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/activity_title"></include>
+
+
+    <ImageView
+        android:layout_width="45.5dp"
+        android:layout_height="47.5dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="232dp"
+        android:layout_height="34dp"
+        android:background="@drawable/login_input"
+        android:orientation="horizontal"
+        android:layout_marginTop="191dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="23.5dp"
+            android:src="@drawable/login_icon_username" />
+
+        <EditText
+            android:id="@+id/et_phonename"
+            android:layout_width="232dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:hint="@string/appregister_et_phonename"
+            android:inputType="phone"
+            android:paddingLeft="11.5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="11.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="232dp"
+        android:layout_height="34dp"
+        android:background="@drawable/login_input"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="23.5dp"
+            android:src="@drawable/login_icon_password" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="140dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:hint="@string/appregister_et_password"
+            android:inputType="textPassword"
+            android:paddingLeft="11.5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="11.5dp" />
+
+        <ImageView
+            android:id="@+id/iv_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/register_icon_eye" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_phonemessagecode"
+            android:layout_width="232dp"
+            android:layout_height="34dp"
+            android:background="@drawable/login_input"
+            android:hint="@string/appregister_et_phonemessagecode"
+            android:inputType="number"
+            android:paddingLeft="56dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="11.5dp" />
+
+        <Button
+            android:id="@+id/bt_getphonemessagecode"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="162dp"
+            android:background="@drawable/register_get_sucerity_code"
+            android:text="@string/appregister_bt_getphonemessagecode"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_appregister"
+        android:layout_width="232dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/login_click_to_sucerity"
+        android:text="@string/appregister_bt_register"
+        android:textSize="12dp" />
+
+
+</LinearLayout>

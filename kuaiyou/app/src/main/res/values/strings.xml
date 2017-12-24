@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">快友</string>
+    //网络错误提醒
+    <string name="net_error">网络错误</string>
+    //APP登陆界面
+    <string name="applogin_et_loginhintstr">手机号/账号/微信号</string>
+    <string name="applogin_tv_company_name">智创云显</string>
+    <string name="applogin_et_password">密码</string>
+    <string name="applogin_bt_login">登\t\t\t\t\t录</string>
+    <string name="applogin_bt_register">新用户注册</string>
+    <string name="applogin_bt_forgetpassword">忘记密码？</string>
+    <string name="applogin_bt_wxlogin">微信登录</string>
+    <string name="applogin_username_or_password_is_emp">"账号密码不能为空"</string>
+    <string name="applogin_username_type_error">该用户类型不能登录商家系统</string>
+    <string name="applogin_login_is_employee">员工登录中...</string>
+    <string name="applogin_login_is_merchant">商家登录中...</string>
+    <string name="applogin_login_is_merchant_group">商家集团登录中...</string>
+    <string name="applogin_login_is_lhcx">联合创新员工登录中...</string>
+    //APP注册页面
+    <string name="appregister_title">账号注册</string>
+    <string name="appregister_et_phonename">请输入手机号码</string>
+    <string name="appregister_et_password">输入密码</string>
+    <string name="appregister_et_phonemessagecode">输入验证码</string>
+    <string name="appregister_bt_getphonemessagecode">获得验证码</string>
+    <string name="appregister_bt_getphonemessagecodewait">等待:</string>
+    <string name="appregister_bt_register">注\t\t\t\t\t册</string>
+
+
+    //APP找回密码界面
+    <string name="appfindpassword_title">忘记密码</string>
+    <string name="appfindpassword_et_phonename">请输入注册手机号码</string>
+    <string name="appfindpassword_et_phonemessagecode">输入验证码</string>
+    <string name="appfindpassword_bt_getphonemessagecode">获得验证码</string>
+    <string name="appfindpassword_bt_resetpassword">重置密码</string>
+
+    <string name="login">登录</string>
+    <string name="registered">注册</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="title_activity_account_login">AccountLoginActivity</string>
+    <string name="title_activity_enroll_next">EnrollNextActivity</string>
+    <string name="title_activity_user_contract">UserContractActivity</string>
+    <string name="title_activity_law_clause">LawClauseActivity</string>
+    <string name="title_activity_user_message">UserMessageActivity</string>
+    <string name="title_activity_compile_user">CompileUserActivity</string>
+
+
+</resources>

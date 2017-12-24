@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.china.kuaiyou">
+
+
+    //A字头权限
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    //C字头权限
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    //F字头
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    //I字头
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    //V字头
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    //R字头
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    //W字头
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 硬件支持 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    //A字头权限
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+
+    //C字头权限
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    //F字头
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    //G字头
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    //M字头
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    //I字头
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    //V字头
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    //R字头
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    //W字头
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".appliction.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ImageTranslucentTheme">
+        //GLIDE配置缓存
+        <meta-data
+            android:name="com.china.kuaiyou.glide.MyGlideModule"
+            android:value="GlideModule" />
+        //activity配置区域开始
+        //欢迎界面
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //主页面
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        //
+        <activity
+            android:name=".activity.LoginActivty"
+            android:screenOrientation="portrait" />
+
+        //主页面
+        <activity
+            android:name=".activity.AppRegisterActivity"
+
+            android:screenOrientation="portrait" />
+
+        //主页面
+        <activity
+            android:name=".activity.AppFindPassWordActivity"
+
+            android:screenOrientation="portrait" />
+
+        //主页面
+        <activity
+            android:name=".activity.AllLoginActivity"
+
+            android:screenOrientation="portrait" />
+
+        //我页面
+        <activity
+            android:name=".activity.MeActivity"
+            android:screenOrientation="portrait" />
+
+        //扫码页面
+        <activity
+            android:name=".zxing.app.CaptureActivity"
+            android:screenOrientation="portrait" />
+
+        //扫码页面
+        <activity
+            android:name=".activity.RqCodeActivity"
+            android:screenOrientation="portrait" />
+
+        //扫码页面
+        <activity
+            android:name=".activity.MeTemplateActivity"
+            android:screenOrientation="portrait" />
+
+        //扫码页面
+        <activity
+            android:name=".activity.UploadActivity"
+            android:screenOrientation="portrait" />
+
+        //视频播放页面
+        <activity
+            android:name=".activity.VideoActivity"
+            android:screenOrientation="portrait" />
+
+        //消息页面
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+
+        //钱包页面
+        <activity
+            android:name=".activity.KuaiYouBiActivity"
+            android:screenOrientation="portrait" />
+
+        //发现页面
+        <activity
+            android:name=".activity.FindActivity"
+            android:screenOrientation="portrait" />
+
+        //设置页面
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+        //设置页面
+        <activity
+            android:name=".activity.UpdataImageActivity"
+            android:screenOrientation="portrait" />
+
+        //作品集页面
+        <activity
+            android:name=".activity.MyVideosActivity"
+            android:screenOrientation="portrait" />
+
+        //我是摄影
+        <activity
+            android:name=".activity.MyCameraActivity"
+            android:screenOrientation="portrait" />
+
+        //我是摄影
+        <activity
+            android:name=".activity.UpdateVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.AddressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.EnrollNextActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UserContractActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LawClauseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.UserMessageActivity"
+            android:label="@string/title_activity_user_message"
+            android:theme="@style/ImageTranslucentTheme" />
+        <activity
+            android:name=".activity.CompileUserActivity"
+            android:label="@string/title_activity_compile_user"
+            android:theme="@style/ImageTranslucentTheme"></activity>
+
+        //activity配置区域结束
+
+        //配置环信开始
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="lixiaodiedie#lixiaocall" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        //配置环信结束
+
+        <service android:name=".service.LianHeService" />
+
+    </application>
+
+</manifest>

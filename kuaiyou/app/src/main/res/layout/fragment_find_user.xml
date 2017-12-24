@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.china.kuaiyou.activity.fragments.FindUserFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/flush_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/phone_address_view"
+                style="@style/setting_layout_style">
+
+                <ImageView
+                    style="@style/setting_icon_view_style"
+                    android:src="@mipmap/the_drawer" />
+
+                <TextView
+                    style="@style/setting_contents_view_style"
+                    android:text="手机通讯录" />
+
+                <ImageView style="@style/setting_icon_boult_style" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="22dp"
+                android:background="@color/userupdate_bj"
+                android:gravity="center"
+                android:text="你可能感兴趣的人"
+                android:textSize="12dp" />
+
+            <ListView
+                android:id="@+id/show_address_book_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

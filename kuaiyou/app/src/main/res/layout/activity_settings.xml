@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.china.kuaiyou.activity.SettingsActivity">
+
+    <include layout="@layout/activity_title_white_layout" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/phone_layuout"
+                style="@style/setting_layout_style">
+
+                <ImageView
+                    style="@style/setting_icon_view_style"
+                    android:src="@mipmap/mobile_phone" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="6.7"
+                    android:gravity="center_vertical"
+                    android:text="绑定手机号" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.6"
+                    android:background="@drawable/button_frame_style"
+                    android:text="綁定"
+                    android:textColor="@color/sbc_list_item" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:background="@color/userupdate_bj"
+                android:gravity="center_vertical"
+                android:text="    绑定手机让你的账号更安全"
+                android:textSize="12dp" />
+
+            <!--1-->
+            <LinearLayout style="@style/setting_item_mix_layout_style">
+
+                <LinearLayout
+                    android:id="@+id/account_guard_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/account_protection" />
+
+                    <LinearLayout
+                        style="@style/setting_contents_view_style"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:text="账号保护" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/address"
+                            android:gravity="center_vertical|right"
+                            android:text="未保护" />
+                    </LinearLayout>
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@mipmap/user_update_item_bj"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/setting_icon_view_style"
+                        android:background="@color/white" />
+
+                    <View
+                        style="@style/setting_contents_view_style"
+                        android:background="@color/userupdate_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/privates_set_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/test_new_version" />
+
+                    <TextView
+                        style="@style/setting_contents_view_style"
+                        android:text="隐私设置" />
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="22dp"
+                android:background="@color/userupdate_bj"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="12dp" />
+
+            <!--2-->
+            <LinearLayout style="@style/setting_item_mix_layout_style">
+
+                <LinearLayout
+                    android:id="@+id/cache_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/deleting" />
+
+                    <TextView
+                        style="@style/setting_contents_view_style"
+                        android:text="清除缓存" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@mipmap/user_update_item_bj"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/setting_icon_view_style"
+                        android:background="@color/white" />
+
+                    <View
+                        style="@style/setting_contents_view_style"
+                        android:background="@color/userupdate_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/save_production_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/local_portfolio" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="6.7"
+                        android:gravity="center_vertical"
+                        android:text="自动保存作品到本地作品集" />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="22dp"
+                android:background="@color/userupdate_bj"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="12dp" />
+
+            <!--3-->
+            <LinearLayout style="@style/setting_item_mix_layout_style">
+
+                <LinearLayout
+                    android:id="@+id/power_radio_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/no_flow_service" />
+
+                    <LinearLayout
+                        style="@style/setting_contents_view_style"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="免流量服务" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="视频,直播免流量" />
+                    </LinearLayout>
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@mipmap/user_update_item_bj"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/setting_icon_view_style"
+                        android:background="@color/white" />
+
+                    <View
+                        style="@style/setting_contents_view_style"
+                        android:background="@color/userupdate_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fans_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/fans_headlines" />
+
+                    <TextView
+                        style="@style/setting_contents_view_style"
+                        android:text="粉丝头条" />
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:background="@color/userupdate_bj"
+                android:gravity="center_vertical"
+                android:text="    增加作品曝光，获得潜在粉丝"
+                android:textSize="12dp" />
+
+            <!--4-->
+            <LinearLayout style="@style/setting_item_mix_layout_style">
+
+                <LinearLayout
+                    android:id="@+id/ticking_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/feedback" />
+
+                    <TextView
+                        style="@style/setting_contents_view_style"
+                        android:text="反馈与帮助" />
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@mipmap/user_update_item_bj"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/setting_icon_view_style"
+                        android:background="@color/white" />
+
+                    <View
+                        style="@style/setting_contents_view_style"
+                        android:background="@color/userupdate_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_me_layout"
+                    style="@style/setting_layout_style">
+
+                    <ImageView
+                        style="@style/setting_icon_view_style"
+                        android:src="@mipmap/about_us" />
+
+                    <TextView
+                        style="@style/setting_contents_view_style"
+                        android:text="关于我们" />
+
+                    <ImageView style="@style/setting_icon_boult_style" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/setting_layout_style">
+
+                <Button
+                    android:id="@+id/exit_land_buuton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button_el_style"
+                    android:gravity="center"
+                    android:text="退出登录"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
